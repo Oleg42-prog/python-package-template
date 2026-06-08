@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "template-package"
-version = "0.0.1"
+dynamic = ["version"]
 description = "Template package"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -25,3 +25,5 @@ dev = [
 
 [tool.setuptools.packages.find]
 include = ["template_package*"]
+
+[tool.setuptools_scm]
