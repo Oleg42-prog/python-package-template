@@ -22,3 +22,6 @@ dev = [
   "pytest",
   "build"
 ]
+
+[tool.setuptools.packages.find]
+include = ["template_package*"]
